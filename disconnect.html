@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disconnect — QBO AI Accountant</title><style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+       max-width:760px;margin:0 auto;padding:40px 24px;line-height:1.6;color:#1a1a1a}
+  h1{font-size:1.8rem;margin-bottom:.2em} h2{margin-top:1.6em;font-size:1.25rem}
+  a{color:#0a7d3c} code{background:#f3f3f3;padding:2px 6px;border-radius:4px;font-size:.9em}
+  .nav{margin:24px 0;padding-bottom:16px;border-bottom:1px solid #eee;font-size:.95rem}
+  .nav a{margin-right:18px;text-decoration:none}
+  .muted{color:#666;font-size:.9rem} .card{background:#f9f9f9;border:1px solid #eee;border-radius:8px;padding:18px 22px;margin:18px 0}
+  footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#888;font-size:.85rem}
+</style></head>
+<body><div class="nav"><a href="./">Home</a><a href="connect.html">Connect</a><a href="disconnect.html">Disconnect</a><a href="eula.html">EULA</a><a href="privacy.html">Privacy</a></div>
+<h1>Disconnect</h1>
+<p>You can disconnect this application from your QuickBooks Online company at any time:</p>
+<ol>
+<li><strong>From QuickBooks Online:</strong> go to <em>Settings &rarr; Apps</em> (or the
+Intuit account&rsquo;s connected-apps page), find this app, and choose
+<em>Disconnect</em>.</li>
+<li><strong>From the application:</strong> run <code>python3 qbo_auth.py revoke</code>,
+which revokes the refresh token with Intuit and deletes the local token file.</li>
+</ol>
+<p>Upon disconnection, stored access and refresh tokens are invalidated and the
+application can no longer access your data.</p>
+
+<footer>QuickBooks Online AI Accountant — a private, read-only personal integration.
+Not affiliated with or endorsed by Intuit Inc. &ldquo;QuickBooks&rdquo; is a trademark of Intuit Inc.<br>
+Contact: <a href="mailto:leonard.wood@cloudstak.io">leonard.wood@cloudstak.io</a></footer>
+</body></html>
